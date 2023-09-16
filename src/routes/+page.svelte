@@ -1,18 +1,18 @@
 <script lang="ts" >
  import { onMount } from "svelte";
- import phone from "../assets/phone.png";
- import profile from "../assets/profile.png";
- import facebook from "../assets/Facebook.png";
- import whatsapp from "../assets/WhatsApp.png";
- import maps from "../assets/maps.png";
- import fax from "../assets/fax.png";
- import fax2 from "../assets/fax.png";
- import gmail from "../assets/gmail.png";
- import amazon from "../assets/amazon.png";
- import pay from "../assets/pay.png";
- import box from "../assets/box.png";
- import fotocopie from "../assets/fax.png";
- import gradient from "../assets/gradient.png";
+ import phone from "CartoleriaMietto/assets/phone.png";
+ import profile from "CartoleriaMietto/assets/profile.png";
+ import facebook from "CartoleriaMietto/assets/Facebook.png";
+ import whatsapp from "CartoleriaMietto/assets/WhatsApp.png";
+ import maps from "CartoleriaMietto/assets/maps.png";
+ import fax from "CartoleriaMietto/assets/fax.png";
+ import fax2 from "CartoleriaMietto/assets/fax.png";
+ import gmail from "CartoleriaMietto/assets/gmail.png";
+ import amazon from "CartoleriaMietto/assets/amazon.png";
+ import pay from "CartoleriaMietto/assets/pay.png";
+ import box from "CartoleriaMietto/assets/box.png";
+ import fotocopie from "CartoleriaMietto/assets/fax.png";
+ import gradient from "CartoleriaMietto/assets/gradient.png";
 
 </script>
 <div class="content">
@@ -150,13 +150,13 @@ background-color: #3f02ff;
 background: #25B900;
 }
 .maps{
-background-image:url("../assets/gradient.png");
+background-image:url("CartoleriaMietto/assets/gradient.png");
 }
 .fax{
 background-color: #88C7CC;
 }
 .gmail{
-background-image: url("../assets/gradient.png") ;
+background-image: url("CartoleriaMietto/assets/gradient.png") ;
 }
 .amazon{
 background: #FE9901;

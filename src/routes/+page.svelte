@@ -17,7 +17,7 @@
 </script>
 <div class="content">
  <div class="profile">
-   <img src={profile} class="img" alt="." />
+   <img src={profile} class="img"  />
  </div>
  <div class="info">
    <div class="name" style="font-size: xx-large; color: white">
@@ -28,33 +28,33 @@
  </div>
 
  <div class="element phone">
-   <img src={phone} class="img" alt="" />
+   <img src={phone} class="img"  />
    <div class="text"><a href="tel:0183 651376">0183 651376</a></div>
  </div>
  <div class="element facebook">
-   <img src={facebook} class="img" alt="" />
+   <img src={facebook} class="img"  />
    <div class="text"><a href="https://www.facebook.com/CartoleriaMietto/?locale=it_IT">Cartoleria Mietto</a></div>
  </div>
  <div class="element whatsapp">
-  <img src={whatsapp} class="img" alt="" />
+  <img src={whatsapp} class="img"  />
   <div class="text"><a href= "tel:3277663329">327 76 63 329</a></div>
 </div><div class="element maps">
- <img src={maps}  class="img" alt="" />
+ <img src={maps}  class="img"  />
  <div class="text"><a  href="https://maps.app.goo.gl/sgQYb6ysN7HBm5cr5">Via Felice Cascione, 87</a></div>
 </div><div class="element fax"> 
-<img src={fax} class="img" alt="" />
+<img src={fax} class="img"  />
 <div class="text">Trasmissione e ricezione Fax</div>
 </div>
 <div class="element gmail">
-<img src={gmail}   class="img" alt="" />
+<img src={gmail}   class="img"  />
 <div class="text"><a target="_top" href="mailto:miettocart@gmail.com" >miettocart@gmail.com</a></div>
 </div>
 <div class="element amazon">
-<img src={amazon} class="img" alt="" />
+<img src={amazon} class="img"  />
 <div class="text">punto di ritiro amazon</div>
 </div>
 <div class="element pay">
-<img src={pay} class="img" alt="" />
+<img src={pay} class="img"  />
 <div class="text">
 pagare bollettini: <br>
 postali <br>
@@ -64,11 +64,11 @@ pagopa
 </div>
 </div>
 <div class="element box">
-<img src={box} class="img" alt="" />
+<img src={box} class="img"  />
 <div class="text">Fare spedizioni con i migliori corrieri</div>
 </div>
 <div class="element fotocopie">
-<img src={fotocopie} class="img" alt="" />
+<img src={fotocopie} class="img"  />
 <div class="text">Trasmissione e ricezione Fax, Fotocopie colori e B/N Digitali
 Timbri, Biglietti da visita, Rilegature e riparazioni Libri, Spiralature, Brossure, Plastificazioni a caldo A/3 - A/4
 Stampe da Chiavetta da CD</div>
@@ -79,6 +79,7 @@ Stampe da Chiavetta da CD</div>
 font-family: "Montserrat", sans-serif;
 margin: 0;
 border-radius: 0%;
+
 }
 img{
 overflow: none;
@@ -103,18 +104,18 @@ color: inherit;
 .content {
 padding-top: 1rem;
 width: 100%;
-height: 100vh;
+
 background-color: #fec014;
 display: flex;
 flex-direction: column;
 align-items: center;
 gap: 1rem;
-height: 120vh;
+height: 140vh;
 
 align-items: center;
 }
 .element {
-
+min-height: 50px;
 box-sizing: border-box;
 overflow-y: hidden;
 width: 95%;

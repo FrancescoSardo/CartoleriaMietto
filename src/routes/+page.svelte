@@ -1,18 +1,18 @@
 <script lang="ts" >
  import { onMount } from "svelte";
- import phone from "CartoleriaMietto/assets/phone.png";
- import profile from "CartoleriaMietto/assets/profile.png";
- import facebook from "CartoleriaMietto/assets/Facebook.png";
- import whatsapp from "CartoleriaMietto/assets/WhatsApp.png";
- import maps from "CartoleriaMietto/assets/maps.png";
- import fax from "CartoleriaMietto/assets/fax.png";
- import fax2 from "CartoleriaMietto/assets/fax.png";
- import gmail from "CartoleriaMietto/assets/gmail.png";
- import amazon from "CartoleriaMietto/assets/amazon.png";
- import pay from "CartoleriaMietto/assets/pay.png";
- import box from "CartoleriaMietto/assets/box.png";
- import fotocopie from "CartoleriaMietto/assets/fax.png";
- import gradient from "CartoleriaMietto/assets/gradient.png";
+ import phone from "../assets/phone.png";
+ import profile from "../assets/profile.png";
+ import facebook from "../assets/Facebook.png";
+ import whatsapp from "../assets/WhatsApp.png";
+ import maps from "../assets/maps.png";
+ import fax from "../assets/fax.png";
+ 
+ import gmail from "../assets/gmail.png";
+ import amazon from "../assets/amazon.png";
+ import pay from "../assets/pay.png";
+ import box from "../assets/box.png";
+ import fotocopie from "../assets/fax2.png";
+ import gradient from "../assets/gradient.png";
 
 </script>
 <div class="content">
@@ -40,14 +40,14 @@
   <div class="text"><a href= "tel:3277663329">327 76 63 329</a></div>
 </div><div class="element maps">
  <img src={maps}  class="img" alt="" />
- <div class="text"><a href="https://maps.app.goo.gl/sgQYb6ysN7HBm5cr5">Via Felice Cascione, 87</a></div>
+ <div class="text"><a  href="https://maps.app.goo.gl/sgQYb6ysN7HBm5cr5">Via Felice Cascione, 87</a></div>
 </div><div class="element fax"> 
-<img src={fax2} class="img" alt="" />
+<img src={fax} class="img" alt="" />
 <div class="text">Trasmissione e ricezione Fax</div>
 </div>
 <div class="element gmail">
 <img src={gmail}   class="img" alt="" />
-<div class="text"><a href= "mailto:miettocart@gmail.com">miettocart@gmail.com</a></div>
+<div class="text"><a target="_top" href="mailto:miettocart@gmail.com" >miettocart@gmail.com</a></div>
 </div>
 <div class="element amazon">
 <img src={amazon} class="img" alt="" />
@@ -75,7 +75,7 @@ Stampe da Chiavetta da CD</div>
 </div>
 </div>
 <style lang="scss">
-* {
+*{
 font-family: "Montserrat", sans-serif;
 margin: 0;
 border-radius: 0%;
@@ -83,14 +83,18 @@ border-radius: 0%;
 img{
 overflow: none;
 }
-.profile.img{
-height: 100px;
+.profile{
+/* height: 100px; */
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 a:visited {
 text-decoration: none;
 text-decoration-line: none;
 color: inherit;
-}
+} 
 a {
 text-decoration: none;
 text-decoration-line: none;
@@ -106,6 +110,8 @@ flex-direction: column;
 align-items: center;
 gap: 1rem;
 height: 120vh;
+
+align-items: center;
 }
 .element {
 
@@ -118,7 +124,7 @@ align-items: center;
 -webkit-box-shadow: 5px 5px 0px 0px #000000;
 box-shadow: 5px 5px 0px 0px #000000;
 color: white;
-gap: 4rem;
+
 .text {
  text-align: center;
 }
@@ -150,13 +156,13 @@ background-color: #3f02ff;
 background: #25B900;
 }
 .maps{
-background-image:url("CartoleriaMietto/assets/gradient.png");
+background-image:url("../assets/gradient.png");
 }
 .fax{
 background-color: #88C7CC;
 }
 .gmail{
-background-image: url("CartoleriaMietto/assets/gradient.png") ;
+background-image: url("../assets/gradient.png") ;
 }
 .amazon{
 background: #FE9901;
